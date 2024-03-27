@@ -11,6 +11,8 @@
             EvenOdd();
             PosNeg();
             AgeVote();
+            IntCheck();
+            MultiTable();
 
         }
         //Write a method that will print to the console numbers 1000 through -1000
@@ -24,7 +26,7 @@
 
         //write a method that will print to the console numbers 3 through 999 by 3 each time.'
 
-        
+
         public static void Threes()
         {
             for (int k = 3; k <= 999; k += 3)
@@ -50,7 +52,7 @@
         //write a method to check whether given number is even or odd.
         public static void EvenOdd(int c = 11)
         {
-            if(c % 2 == 0)
+            if (c % 2 == 0)
             {
                 Console.WriteLine($"Even");
             }
@@ -85,6 +87,34 @@
                 Console.WriteLine("You Can Vote!");
             }
         }
+
+        //Check if integer is between -10 and 10
+        public static void IntCheck(int g = 9)
+        {
+            if (g >= -10 && g <= 10)
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+        }
+
+        //Display Multiplication table of given number
+        public static void MultiTable()
+        {
+            int number = 5; // The number whose multiplication table you want to display
+
+            Console.WriteLine($"Multiplication table of {number}:");
+            for (int i = 1; i <= 12 && i > 0; i++)
+            {
+                int product = number * i;
+                Console.WriteLine($"{number} * {i} = {product}");
+            }
+        }
+
+
     }
 
 
